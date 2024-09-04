@@ -3,13 +3,13 @@
 calcule e imprima o valor a ser pago pelo cliente,
 sabendo-se que o preço do litro da gasolina é R$ 5,80 e o preço do litro do etanol é R$ 4,90."""
 litro = float(input("Informe quantos litros foi colocado em seu veiculo: "))
-tipoCombustivel = input("Informe qual tipo de combustivel foi colocado. \n"
-                        "Digite...\n(E) para Etanol e (G) para Gasolina: ")
+Combustivel = input("Informe qual tipo de combustivel foi colocado. \n"
+                    "Digite...\n(E) para Etanol e (G) para Gasolina: ")
 
-if (tipoCombustivel != "E" and tipoCombustivel != "e") and (tipoCombustivel != "G" and tipoCombustivel != "g"):
+if (Combustivel != "E" and Combustivel != "e") and (Combustivel != "G" and Combustivel != "g"):
     print("Esse tipo de combustivel não existe!!")
 else:
-    if tipoCombustivel == "E" or tipoCombustivel == "e":
+    if Combustivel == "E" or Combustivel == "e":
         tipoCombustivel = 'Etanol'
         valorCombustivel = 4.90
         valorTotal = litro * valorCombustivel
