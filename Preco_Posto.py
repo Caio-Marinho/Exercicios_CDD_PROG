@@ -2,8 +2,6 @@
 (codificado da seguinte forma: E-etanol, G-gasolina),
 calcule e imprima o valor a ser pago pelo cliente,
 sabendo-se que o preço do litro da gasolina é R$ 5,80 e o preço do litro do etanol é R$ 4,90."""
-import time
-i = time.time()
 litro = float(input("Informe quantos litros foi colocado em seu veiculo: "))
 combustivel = input("Informe qual tipo de combustivel foi colocado. \n"
                     "Digite...\n(E) para Etanol e (G) para Gasolina: ")
@@ -23,5 +21,3 @@ else:
         valorTotal = litro * valorCombustivel
         print(f"O combustivel escolhido foi o {tipoCombustivel} tendo colocado {litro} Litro(s) totalizando "
               f"um valor total de R$ {valorTotal:.2f}")
-f = time.time()
-print(f-i)
