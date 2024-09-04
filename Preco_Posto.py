@@ -6,18 +6,17 @@ litro = float(input("Informe quantos litros foi colocado em seu veiculo: "))
 combustivel = input("Informe qual tipo de combustivel foi colocado. \n"
                     "Digite...\n(E) para Etanol e (G) para Gasolina: ")
 
-if combustivel == "E" or combustivel == "e":
-    tipoCombustivel = 'Etanol'
-    valorCombustivel = 4.90
-    valorTotal = litro * valorCombustivel
-    print(f"O combustivel escolhido foi o {tipoCombustivel} tendo colocado {litro} Litro(s) totalizando "
+if (combustivel != "E" and combustivel != "e") and (combustivel != "G" and combustivel != "g"):
+    print("Esse tipo de combustivel não existe!!")
+    if combustivel == "E" or combustivel == "e":
+        tipoCombustivel = 'Etanol'
+        valorCombustivel = 4.90
+        valorTotal = litro * valorCombustivel
+        print(f"O combustivel escolhido foi o {tipoCombustivel} tendo colocado {litro} Litro(s) totalizando "
               f"um valor total de R$ {valorTotal:.2f}")
-else:
-    if combustivel == "G" or combustivel == "g":
+    else:
         tipoCombustivel = 'Gasolina'
         valorCombustivel = 5.80
         valorTotal = litro * valorCombustivel
         print(f"O combustivel escolhido foi o {tipoCombustivel} tendo colocado {litro} Litro(s) totalizando "
               f"um valor total de R$ {valorTotal:.2f}")
-    else:
-        print("Tipo de combustivel invalido!!!")
